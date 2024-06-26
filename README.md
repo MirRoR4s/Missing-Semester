@@ -1,4 +1,10 @@
-# Missing Semester 知识点总结
+# Missing Semester
+
+## 前言
+
+记录课后习题的解决方案。
+
+- 所用操作系统是 `Unubtu 22.04`，shell 环境是普通的 `bash` shell。
 
 ## 1. 课程概览与 shell
 
@@ -9,7 +15,19 @@
 
 ---
 
-## 2. shell 工具与脚本
+## 2. [shell 工具与脚本](https://missing.csail.mit.edu/2020/shell-tools/)
+
+```bash
+ls -a # 不忽略以 . 开头的项（linux 中 . 开头的项会被隐藏）
+
+ls -h -l -s # -l 使用长列表格式，-s 打印文件大小，-h 指示打印大小时用 234M、1K 这样的格式
+
+ls -t # 以时间顺序排序所列出的信息，默认是字典序
+
+ls --color=always # 着色输出，默认就是这个配置
+
+
+```
 
 > 以下都针对 bash shell 而言
 
@@ -106,7 +124,7 @@ grep 有很多选项：
 - `uniq -c`：将连续出现的行折叠为一行并用出现次数作为前缀
 - `sort -n`：按数字顺序排序输入（默认为 ASCII）
 
-## 6. 版本控制
+## 6. [版本控制-Git](https://missing.csail.mit.edu/2020/version-control/)
 
 ### 可视化版本历史
 
